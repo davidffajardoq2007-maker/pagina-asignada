@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #fff;
+}
+
+/*header*/
+header {
+    background: #681212;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+/*hero*/
+.hero {
+    position: relative;
+    background: linear-gradient(135deg, #2a060a 40%, #5f2a97 70%);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.3em;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.hero button {
+    background: white;
+    color: #500000;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #d1d1d1;
+}
+
+/*categorias*/
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 10px;
+    background: white;
+}
+
+.caja {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    border-radius: 15px;
+    padding: 25px 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.caja:hover {
+    transform: scale(1.05);
+}
+
+.categoria-percucion {
+    background: linear-gradient(135deg, #95000b, #85000b);
+}
+
+.categoria-viento {
+    background: linear-gradient(135deg, #592321, #483012);
+}
+
+.categoria-cuerda {
+    background: linear-gradient(135deg, #007700, #004400);
+}
+
+.caja span {
+    font-weight: 200;
+    font-size: 0.95em;
+}
+
+/*productos*/
+.productos {
+    background: linear-gradient(180deg, #29272b, #9fa5ac);
+    padding: 45px 15px;
+    text-align: center;
+}
+
+.productos h2 {
+    color: #7d72a8;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.productos-caja {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 0 10px;
+}
+
+.productos-tarjeta {
+    background: #dddbe1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.productos-tarjeta img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.productos-info {
+    padding: 15px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-titulo {
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.producto-especificacion {
+    font-size: 0.85em;
+    font-weight: 300;
+    margin-bottom: 15px;
+    line-height: 1.4em;
+}
+
+.precio-compra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.producto-precio {
+    font-weight: 900;
+    font-size: 1.2em;
+    color: #222547;
+}
+
+.compra-button {
+    background: #353c80;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.compra-button:hover {
+    background-color: #111847;
+}
+
+/*footer*/
+footer {
+    background-color: #8b4313;
+    padding: 48px 5%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.footer-section p {
+    margin-bottom: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-buttom {
+    margin-bottom: 12px;
+    text-align: center;
+    padding-top: 32px;
+    border-top: 1px solid #000000;
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+    header nav {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+}
